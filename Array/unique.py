@@ -1,4 +1,4 @@
-mylist = [0,1,3]
+mylist = [0,1,1,0,3]
 
 def unique(mylist):
     

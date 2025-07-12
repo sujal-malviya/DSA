@@ -10,7 +10,7 @@ def output1(mylist):
             prod = prod*j
         output.append(prod)
     return output
-
+print(output1(mylist))
     # prod = 1
     # for i in range(len(mylist)):
     #     k=i
@@ -24,7 +24,7 @@ def output1(mylist):
     #     return mylist
         
 
-print(output1(mylist))
+# print(output1(mylist))
 
 
 #[1 ,2 ,3,4]  [24,12,8,6]   1st index   ignore then multily all.

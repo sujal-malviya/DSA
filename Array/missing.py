@@ -1,5 +1,5 @@
 #Missing Number - Sum = n(n+1)/2
-mylist = [13,11,14]
+mylist = [13,14,11]
 def missing(mylist):
     indx = 0
     for i in range(len(mylist)):
