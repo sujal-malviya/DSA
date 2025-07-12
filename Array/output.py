@@ -1,20 +1,27 @@
 #output = [24,12,8,6]
 mylist = [1,2,3,4] 
 def output1(mylist):
-    prod = 1
-    for i in range(len(mylist)):
-        k = 0
-        j =i+1
-        for j in range(len(mylist)):
-            k = j
-            if (k==(len(mylist))):
-                break
-            if(i==j):
+    output = []
+    for i in mylist:
+        prod =1 
+        for j in mylist:
+            if (i==j):
                 continue
-            for k in range(len(mylist)):
-                mylist[k] = mylist[k] * prod
-            
-        return mylist
+            prod = prod*j
+        output.append(prod)
+    return output
+
+    # prod = 1
+    # for i in range(len(mylist)):
+    #     k=i
+    #     if k==(len(mylist)):
+    #         break
+    #     if(i==k):
+    #         continue
+    #     for j in range(len(mylist)):
+    #         mylist[j] = mylist[j] * prod
+    #         mylist[i] = mylist[j]
+    #     return mylist
         
 
 print(output1(mylist))
