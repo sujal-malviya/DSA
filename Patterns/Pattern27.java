@@ -16,13 +16,12 @@ public class Pattern27 {
                 System.out.print(ch+"");
                 ch++;
             }
-            // char rowvlaue= ch;
-            // char decremented = rowvlaue--;
-            // for(int j=1;j<=i-1;j++)
-            // {
-            //     System.out.print(decremented+"");
-            //     decremented--;
-            // }
+            char str = (char)(i+'A'-2);
+            for(int j=1;j<=i-1;j++)
+            {
+                System.out.print(str+"");
+                str--;
+            }
             System.out.println();
         }
     }
