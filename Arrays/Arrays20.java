@@ -21,6 +21,32 @@ public class Arrays20 {
         }
         return newarr;
     }    
+    static int[] removeDuplicate(int arr[])
+    {
+        int lenght = arr.length;
+        int i =0;
+        int j=i+1;
+        while(i<lenght && j<lenght)
+        {
+            if(arr[i]==arr[j])
+            {
+                j++;
+               
+            }
+            else if(arr[i]!=arr[j])
+            {
+                i++;
+                arr[i]=arr[j];
+            }
+            
+        }
+        int newarr[] = new int[lenght];
+        for(int k =0;k<lenght;k++)
+        {
+            newarr[k]=arr[k];
+        }
+        return newarr;
+    }
 
     public static void main(String []args)
     {
@@ -31,7 +57,7 @@ public class Arrays20 {
         {
             arr[i]=in.nextInt();
         }
-        int newarr[] = removeDuplicateFromSortedArr(arr);
+        int newarr[] = removeDuplicate(arr);
         for(int ch:newarr)
         {
             System.out.print(ch+" ");

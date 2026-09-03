@@ -24,6 +24,15 @@ public class Arrays21 {
         }
         return newarr;
     }   
+    static int[] moveZeroToEnd(int arr[])
+    {
+        int lenght = arr.length;
+        for(int i =0;i<lenght;i++)
+        {
+            
+        }
+
+    }
     public static void main(String []args)
     {
         Scanner in = new Scanner(System.in);
@@ -33,7 +42,7 @@ public class Arrays21 {
         {
             arr[i]= in.nextInt();
         }
-        int newarr[] = moveZeroesToEnd(arr);
+        int newarr[] = moveZeroToEnd(arr);
 
         for(int ch:newarr)
         {
